@@ -3,7 +3,10 @@ const { createApp } = Vue
         createApp({
           data() {
             return {
-              contador: 0
+              contador: 0,
+
+              mensaje: "Mi Mensaje",
+              toggleMensaje : true
             }
           },
 
@@ -47,8 +50,12 @@ const { createApp } = Vue
 
                 return this.contador -= 10;
 
-            }
+            },
 
+
+            toggle() {
+              this.toggleMensaje = !this.toggleMensaje
+            }
 
           },
 
