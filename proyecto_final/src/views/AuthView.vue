@@ -1,9 +1,12 @@
 <template>
+  <div class="container-fluid">
 
-  <div>
+    <div>
 
-    <LoginComponent></LoginComponent>
+      <LoginComponent></LoginComponent>
 
+    </div>
+    
   </div>
 
 </template>
