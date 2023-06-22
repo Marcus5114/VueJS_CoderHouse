@@ -1,7 +1,7 @@
 <template>
     <div>
         <h3>Listado de Usuarios</h3>
-    </div>
+    </div> 
 
     <div class="table-responsive">
 

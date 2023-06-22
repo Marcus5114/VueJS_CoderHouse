@@ -10,15 +10,16 @@
     <hr>
 
     <div class="container w-75">
-
-      <FormularioWeb @emit-form="agregarUsuario"/>
+      <FormularioWeb 
+        @emit-form="agregarUsuario"
+      />
       
       <hr>
       <br>
-      {{ usuarios }}
+      
       <DataTable
         :usuarios="usuarios"
-        />
+      />
 
     </div>
 
@@ -39,6 +40,11 @@ export default {
     usuarios: [],
   }),
 
+  components: {
+    FormularioWeb,
+    DataTable
+  },
+
   methods: {
     agregarUsuario(usuario) {
       this.usuarios.push(usuario)
@@ -47,10 +53,7 @@ export default {
    
   },
 
-  components: {
-    FormularioWeb,
-    DataTable
-  }
+
 }
 </script>
 
