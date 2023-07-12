@@ -52,7 +52,34 @@
 
                     <button class="btn btn-outline-danger" type="button" @click="reset()"><i class="fas fa-arrows-rotate"></i> Reset</button>
 
+                    <br>
+                    <br>
+                    <hr>
                     
+                    <div class="text-center">
+                        <h1>Directivas Condicionales</h1>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div>
+
+                        <div >
+                            <button class="btn btn-info w-100" @click="toggle()" data> Mostrar/Ocultar</button>
+                        </div>
+
+                        <div>
+                            <p v-if="toggleMensaje">
+                                {{mensaje}}
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <hr>
+                    <br>
 
                 </div>
 
